@@ -54,12 +54,13 @@
 /* Input group */
 .input-group {
     width: 100%;
+    padding : 4px;
 }
 
 /* Input fields */
 .input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
