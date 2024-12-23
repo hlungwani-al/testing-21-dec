@@ -1,0 +1,228 @@
+:root {
+    --medium-purple: #8968cd;
+    --deep-purple: #0a0612;
+    --lavender-blush: #fff0f5;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--lavender-blush);
+    color: var(--deep-purple);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .profile-wrapper {
+    background-color: var(--lavender-blush);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .runner-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .runner-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .runner-avatar {
+    border-radius: 50%;
+    width: 80px;  /* Adjusted size */
+    height: 80px;  /* Adjusted size */
+    margin-right: 20px;
+    border: 3px solid var(--medium-purple);
+    object-fit: cover;  /* Ensures image doesn't stretch */
+  }
+  
+  .runner-info h2 {
+    font-size: 24px;
+    color: var(--deep-purple);
+  }
+  
+  .verification-badge {
+    background-color: var(--medium-purple);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .runner-rating {
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 18px;
+    color: var(--medium-purple);
+  }
+  
+  .star.filled {
+    color: #ffcc00;
+  }
+  
+  .rating-value {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  
+  .runner-reviews {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .product-catalog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .catalog-heading {
+    font-size: 22px;
+    color: var(--deep-purple);
+    margin-bottom: 15px;
+  }
+  
+  .category-filter select {
+    background-color: var(--lavender-blush);
+    border: 1px solid var(--medium-purple);
+    color: var(--deep-purple);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+/* Styling for product cards */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:  #b28ff8;
+  }
+  
+  .add-to-order-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color:  var(--medium-purple);;
+    border: none;
+  }
+  
+  .add-to-order-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Make the cards responsive */
+  @media (max-width: 768px) {
+    .col-md-2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-md-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  .button-wrapper {
+    display: flex;
+    gap: 15px; /* Adjusts space between buttons */
+    margin-top: 20px;  /* Adds space above the buttons */
+  }
+  
+   /* Base button styling */
+   .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  
+  .button-wrapper {
+    text-align: center;
+  }
+  
+  .add-to-order {
+    background-color: var(--medium-purple);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-order:hover {
+    background-color: var(--deep-purple);
+  }
+  
+  .chat-option {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .chat-btn {
+    background-color: var(--medium-purple);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-btn:hover {
+    background-color: var(--deep-purple);
+  }
