@@ -1,0 +1,64 @@
+<div class="cart-page">
+    <h1>Shopping Cart</h1>
+
+    <div class="cart-items">
+        <!-- Example of a product item -->
+        <div class="cart-item">
+            <div class="cart-item-image">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHY2_Df_rg8Jx7RvoBCnVbvYEM7EWqWgDW4FNLdu2-hCYFZ_efX17rNmMWL6Ch7N36RNvtZoYprY7N0sUf0i6ZjCcEVUgGxglmFei5AjIfAI3RbX_K0w5AHQL3UPlxnGbbas5fyw&usqp=CAc"
+                    alt="Product 1">
+            </div>
+            <div class="cart-item-details">
+                <h2 class="cart-item-name">White T-shirt</h2>
+                <p class="cart-item-price">$20.00</p>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div>
+            <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+        <!-- Repeat similar blocks for additional products -->
+
+        <div class="cart-item">
+            <div class="cart-item-image">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQZPprQy1ViX-Zgc9ugRkeYxcAREBy529AbTfLCaKx3ybyvpmUBpEYlPfLqGZY7l-_YbwHzN9q51h3MW0eUEBvwqcQJXwu4GKoKs2XXPBzsFYLHrsX1RYFCdCrBZ-GH&usqp=CAc"
+                    alt="Product 1">
+            </div>
+            <div class="cart-item-details">
+                <h2 class="cart-item-name">Blender</h2>
+                <p class="cart-item-price">$80.00</p>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div>
+            <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <hr class="divider-line">
+
+    <div class="cart-summary">
+        <div class="summary-item">
+            <p>Subtotal:</p>
+            <p class="subtotal">$100.00</p>
+        </div>
+        <div class="summary-item">
+            <p>Delivery Fee:</p>
+            <p class="delivery-fee">$15.00</p>
+        </div>
+        <hr class="divider-line">
+        <div class="summary-item total">
+            <p>Total:</p>
+            <p class="total-price">$115.00</p>
+        </div>
+        <button [routerLink]="['/checkout']" routerLinkActive="router-link-active"  class="checkout-btn">Checkout</button>
+    </div>
+</div>
