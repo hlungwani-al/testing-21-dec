@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="content-wrapper">
+      <!-- Image Section -->
+      <div class="image-section">
+          <img src="images/landingPic.png" class="rounded" alt="...">
+      </div>
+
+      <!-- Register Form Section -->
+      <div class="form-card">
+          <div class="heading">Register Account</div>
+
+          <form action="/register" method="POST">
+              <!-- Username -->
+              <div class="input-group">
+                  <input type="text" class="input" id="username" name="user_fullname" required
+                      placeholder="Username" />
+              </div>
+
+              <!-- Email -->
+              <div class="input-group">
+                  <input type="email" class="input" id="email" name="email" required placeholder="Email" />
+              </div>
+
+              <!-- Phone Number -->
+              <div class="input-group">
+                  <input type="text" class="input" id="phone" name="phone_number" required
+                      placeholder="Phone Number" />
+              </div>
+
+              <!-- Password -->
+              <div class="input-group">
+                  <input type="password" class="input" id="password" name="password" required
+                      placeholder="Password" />
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="input-group">
+                  <input type="password" class="input" id="confirmPassword" name="confirmPassword" required
+                      placeholder="Repeat your password" />
+              </div>
+
+              <!-- Terms Checkbox -->
+              <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="acceptTerms" name="acceptTerms" required />
+                  <label class="form-check-label" for="acceptTerms">
+                      I accept the terms and conditions
+                  </label>
+              </div>
+
+              <!-- Register Button -->
+              <button type="submit" class="login-btn">
+                  Register
+              </button>
+
+              <!-- Login Link -->
+              <div class="register-link">
+                  Already have an account?
+                  <a routerLink='/runner-login'>Login</a>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>

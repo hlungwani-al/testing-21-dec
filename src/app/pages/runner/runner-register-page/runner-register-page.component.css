@@ -1,0 +1,108 @@
+/* Parent container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 16px;
+  width: auto;
+}
+
+/* Wrapper for image and form */
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--lavender-blush); /* Updated background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  background-color: var(--deep-purple); /* Updated image section background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Form Section */
+.form-card {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between elements */
+}
+
+/* Heading */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--deep-purple); /* Updated heading color */
+}
+
+/* Input group */
+.input-group {
+  width: 100%;
+  padding : 4px;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: var(--medium-purple); /* Updated focus border */
+  box-shadow: 0 0 4px rgba(139, 69, 19, 0.5); /* Slight glow */
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--medium-purple); /* Updated button background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: var(--deep-purple); /* Darker brown on hover */
+}
+
+/* Register link */
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  color: var(--deep-purple); /* Updated register link color */
+}
+
+.register-link a {
+  color: var(--medium-purple); /* Updated link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
