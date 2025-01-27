@@ -1,0 +1,199 @@
+  
+  /* Parent container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 24px;
+    background-color: var(--light-gray);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Content wrapper */
+  .content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Filter section */
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 16px;
+  }
+  
+  /* Modern Heading Style */
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--deep-purple);
+    text-align: center;
+    margin: 0 auto 16px auto;
+    position: relative;
+    text-transform: capitalize; /* Adds a polished look */
+  }
+  
+  /* Add an underline effect */
+  .heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--medium-purple); /* Accent color */
+    margin: 8px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the heading */
+  .heading:hover::after {
+    width: 120px;
+    background: var(--accent-color); /* Slightly different color for hover */
+  }
+  
+  
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .filter-select {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    background: var(--lavender-blush);
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    font-size: 16px;
+    color: var(--deep-purple);
+    transition: all 0.3s ease;
+  }
+  
+  .filter-select:focus {
+    border-color: var(--medium-purple);
+    box-shadow: 0 0 10px rgba(137, 104, 205, 0.5);
+    outline: none;
+  }
+  
+  /* Runner list */
+  .runner-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding-top: 16px;
+  }
+  
+  /* Runner card */
+  .runner-card {
+    background: linear-gradient(145deg, var(--lavender-blush), white);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .runner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .runner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .runner-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-purple);
+  }
+  
+  .runner-products {
+    font-size: 16px;
+    color: var(--dark-gray);
+    opacity: 0.8;
+  }
+  
+  /* View Profile Button */
+  .view-profile-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: var(--medium-purple);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    align-self: start;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-profile-btn:hover {
+    background: var(--deep-purple);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .filter-select {
+      width: 100%;
+    }
+  
+    .runner-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Star Rating Container */
+.runner-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 4px;
+  }
+  
+  /* Star Icon */
+  .star {
+    font-size: 20px;
+    color: var(--medium-purple); /* Default star color */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Filled Star */
+  .star.filled {
+    color: var(--deep-purple); /* Filled star color */
+  }
+  
+  /* Hover Animation */
+  .star:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Rating Value (Optional) */
+  .rating-value {
+    font-size: 14px;
+    color: var(--deep-purple);
+    margin-left: 4px;
+  }
+  

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-auth-page',
+  selector: 'app-cart',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './auth-page.component.html',
-  styleUrl: './auth-page.component.css'
+  templateUrl: './cart.component.html',
+  styleUrl: './cart.component.css'
 })
-export class AuthPageComponent {
+export class CartComponent {
 
 }

@@ -1,0 +1,49 @@
+<div class="product-page">
+    <div class="product-image-container">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHY2_Df_rg8Jx7RvoBCnVbvYEM7EWqWgDW4FNLdu2-hCYFZ_efX17rNmMWL6Ch7N36RNvtZoYprY7N0sUf0i6ZjCcEVUgGxglmFei5AjIfAI3RbX_K0w5AHQL3UPlxnGbbas5fyw&usqp=CAc" alt="Product Image" class="product-image">
+    </div>
+  
+    <div class="product-info">
+      <p class="product-id">Product ID: 12345</p>
+      <h2 class="product-name">White T-shirt</h2>
+      <p class="product-price">$199.99</p>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+      <div class="product-color">
+        <label for="color-selection">Color:</label>
+        <select id="color-selection">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+  
+      <div class="product-size">
+        <label for="size-selection">Size:</label>
+        <select id="size-selection">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="large"> X-Large</option>
+        </select>
+      </div>
+  
+      <div class="product-quantity">
+        <label for="quantity-selection">Quantity:</label>
+        <input type="number" id="quantity-selection" value="1" min="1" max="10">
+      </div>
+  
+      <button class="add-to-cart-btn">
+        <i routerLink="/cart" class="fas fa-shopping-cart"></i> Add to Cart
+      </button>
+    
+      <button routerLink="/runnerProfile" class="add-to-cart-btn">See More</button>
+
+      <hr class="divider-line">
+      <div class="sold-by">
+        <p>Sold by: <span class="seller-name">John Doe</span></p>
+      </div>      
+      <hr class="divider-line">
+    </div>
+  </div>
+  
