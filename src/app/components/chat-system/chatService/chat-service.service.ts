@@ -21,7 +21,7 @@ export class ChatServiceService {
       heartbeatOutgoing: 4000,
     });
 
-    this.client.webSocketFactory = () => new SockJS('http://localhost:8080/ws');
+    this.client.webSocketFactory = () => new SockJS('http://localhost:8080/ws'); // the socks library is not found, so for now we don't use it
 
     this.client.onConnect = () => {
       console.log('Connected to WebSocket');
