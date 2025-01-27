@@ -2,28 +2,21 @@
 .sign-in * {
   box-sizing: border-box;
 }
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+    width: auto;
+    margin-top: 10%;
+
+}
 .sign-in {
   background: #ffffff;
   height: 932px;
   position: relative;
   overflow: hidden;
-}
-.back-arrow {
-  width: 37px;
-  height: 37px;
-  position: absolute;
-  left: 18px;
-  top: 73px;
-}
-.back-arrow2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  object-fit: cover;
 }
 .forgot-password {
   color: #3c5a5d;
@@ -161,28 +154,9 @@
   width: 90px;
   height: 28px;
 }
-.ellipse-11 {
-  background: #ffffff;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: #3c5a5d;
-  border-width: 3px;
-  width: 248px;
-  height: 316px;
-  position: absolute;
-  left: 95px;
-  top: 116px;
-}
-.ellipse-12 {
-  background: #3c5a5d;
-  border-radius: 50%;
-  width: 227px;
-  height: 316px;
-  position: absolute;
-  left: 96px;
-  top: 116px;
-}
-.logo-wwhite {
+
+
+.logo-white {
   border-radius: 100px;
   width: 146px;
   height: 244px;
@@ -191,3 +165,40 @@
   top: 116px;
   object-fit: cover;
 }
+
+  
+  body {
+    background-color: var(--white-background);
+    font-family: "Inter", sans-serif;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-family: "Inter-SemiBold", sans-serif;
+    color: var(--black-text);
+  }
+  
+  .btn-primary {
+    background-color: var(--green-buttons-links);
+    color: var(--white-background);
+    border-style: none;
+   
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--seondary-background);
+  }
+  
+
+  
+ .link{
+    text-decoration: none;
+    color: var(--green-buttons-links);
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  } 
+
+  .link:hover {
+    color: var(--seondary-background);;
+  }

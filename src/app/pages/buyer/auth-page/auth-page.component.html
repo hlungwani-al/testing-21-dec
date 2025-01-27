@@ -1,25 +1,40 @@
-<div class="sign-in">
-  <div class="back-arrow">
-    <img class="back-arrow2" src="back-arrow1.png" />
-  </div>
-  <div class="forgot-password">Forgot Password?</div>
-  <div class="sign-in2">Sign In</div>
-  <input class="div" type= "password" placeholder="**************"/>
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+  <div class="position-relative w-100" style="max-width: 400px;">
 
-  <div class="rectangle-10"></div>
-  <input class="johndoe-gmail-com" type= "text" placeholder="johndoe@gmail.com"/>
-  <div class="don-t-have-an-account-sign-up">
-    <span>
-      <span class="don-t-have-an-account-sign-up-span">
-        Don’t have an account?
-      </span>
-      <span class="don-t-have-an-account-sign-up-span2"></span>
-      <span class="don-t-have-an-account-sign-up-span3">Sign Up</span>
-    </span>
+    <!-- Logo -->
+    <div class="text-center mb-4">
+      <div class="position-relative d-inline-block">
+        <img src="images/landing-logo.png" alt="Logo" class="position-absolute" style="width: 278px; height: 316px; margin-top: -295px; margin-left: -130px;" />
+      </div>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="text-center">
+      <h2 class="fw-semibold text-dark">Sign In</h2>
+    </div>
+    <form class="mt-4">
+      <!-- Email Input -->
+      <div class="mb-3">
+        <input type="email" class="form-control rounded-pill px-3 py-2" placeholder="johndoe@gmail.com" />
+      </div>
+      <!-- Password Input -->
+      <div class="mb-3">
+        <input type="password" class="form-control rounded-pill px-3 py-2" placeholder="**************" />
+      </div>
+      <!-- Forgot Password -->
+      <div class="text-end">
+        <a href="#" class="link">Forgot Password?</a>
+      </div>
+      <!-- Sign In Button -->
+      <div class="d-grid mt-3">
+        <button type="submit" class="btn btn-primary rounded-pill py-2">Sign In</button>
+      </div>
+    </form>
+
+    <!-- Sign Up Link -->
+    <div class="text-center mt-4">
+      <span class="text-dark">Don’t have an account?</span>
+      <a href="#" class="link"> Sign Up</a>
+    </div>
   </div>
-  <div class="rectangle-9"></div>
-  <div class="sign-in3">Sign In</div>
-  <div class="ellipse-11"></div>
-  <div class="ellipse-12"></div>
-  <img class="logo-wwhite" src="images/logo-whit.png" />
 </div>
