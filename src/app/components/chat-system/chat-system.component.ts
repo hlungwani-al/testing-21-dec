@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-chat-system',
+  selector: 'chat',
   standalone: true,
   imports: [],
   templateUrl: './chat-system.component.html',
