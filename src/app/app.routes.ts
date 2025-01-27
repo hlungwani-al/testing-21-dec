@@ -8,6 +8,7 @@ import { RunnerRegisterPageComponent } from './pages/runner/runner-register-page
 import { RunnerAuthPageComponent } from './pages/runner/runner-auth-page/runner-auth-page.component';
 import { CartComponent } from './pages/buyer/cart/cart.component';
 import { CheckoutPageComponent } from './pages/buyer/checkout-page/checkout-page.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 
 export const routes: Routes = [
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'runner-list', component: RunnerListPageComponent},
     {path: 'runnerProfile', component:RunnerProfilePageComponent},
     {path: 'productDetails', component: ProductDetailsComponent},
+    {path: 'landingPage', component: LandingPageComponent},
 
     //runner path
     {path: 'runner-login', component: RunnerAuthPageComponent},
