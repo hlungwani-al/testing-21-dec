@@ -13,18 +13,18 @@
       </h1>
     </div>
     
-  <div class="input mb-5">
+    <div class="input mb-5">
+    </div>
 
-  </div>
     <!-- Email Input -->
-    <input type="email" class="form-control  px-3 py-2" placeholder="johndoe@gmail.com" />
+    <input type="email" class="form-control px-3 py-2" placeholder="johndoe@gmail.com" />
     
     <!-- Password Input -->
-    <input type="password" class="form-control  px-3 py-2" placeholder="**************" />
+    <input type="password" class="form-control px-3 py-2" placeholder="**************" />
 
     <!-- Forgot Password Link -->
     <div class="text-end mb-3">
-      <a href="#" class="forgot-password-link">Forgot Password?</a>
+      <a href="#" class="forgot-password-link" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password?</a>
     </div>
 
     <!-- Call-to-Action Button -->
@@ -32,8 +32,30 @@
 
     <!-- Sign-Up Link -->
     <p class="mt-4">
-      <span class="text-muted">Already have an account?</span>
-      <a href="#" class="link">Sign Up</a>
+      <span class="text-muted">Don't have an account?</span>
+      <a routerLink="/buyer-register" class="link">Sign Up</a>
     </p>
+  </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Please provide your email.</p>
+        <form>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="johndoe@gmail.com" required />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Confirm Email</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

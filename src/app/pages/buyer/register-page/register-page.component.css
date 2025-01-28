@@ -1,108 +1,133 @@
-/* Parent container */
-.container {
+/* General Body Styles */
+
+/* Landing Page Container */
+.container-fluid {
+    background-color: var(--white-background);
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
     padding: 16px;
-    width: auto;
-}
-
-/* Wrapper for image and form */
-.content-wrapper {
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-    background-color: var(--lavender-blush); /* Updated background color */
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-/* Image Section */
-.image-section {
-    flex: 1;
-    background-color: var(--deep-purple); /* Updated image section background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Form Section */
-.form-card {
-    flex: 1;
+  }
+  
+  /* Card */
+  .card {
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
     padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Space between elements */
-}
-
-/* Heading */
-.heading {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--deep-purple); /* Updated heading color */
-}
-
-/* Input group */
-.input-group {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding : 4px;
-}
-
-/* Input fields */
-.input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  }
+  
+  /* Main Slogan */
+  .main-slogan {
+    font-size: 32px;
+    font-weight: 690;
+    color: var(--black-text);
+    margin: 0;
+    display: inline-block;
+  }
+  
+  /* Input Fields */
+ /* Labels */
+label.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black-text);
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  input.form-control {
+    border-radius: 10px;
+    padding-left: 15px;
     font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.input:focus {
-    border-color: var(--medium-purple); /* Updated focus border */
-    box-shadow: 0 0 4px rgba(139, 69, 19, 0.5); /* Slight glow */
-}
-
-/* Login button */
-.login-btn {
+    font-weight: 400;
+    width: 100%;
+    margin-top: 4px; /* Space between label and input */
+    
+  }
+  
+  input::placeholder {
+    color: rgba(var(--seondary-background-rgb), 0.5);
+  }
+  
+  /* Checkbox */
+  .form-check-label {
+    font-size: 14px;
+    color: var(--black-text);
+  }
+  
+  /* Button */
+  .btn-primary {
+    background-color: var(--green-buttons-links);
+    color: var(--white-background);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
     width: 100%;
     padding: 12px;
-    background-color: var(--medium-purple); /* Updated button background */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-btn:hover {
-    background-color: var(--deep-purple); /* Darker brown on hover */
-}
-
-/* Register link */
-.register-link {
-    text-align: center;
-    font-size: 14px;
-    color: var(--deep-purple); /* Updated register link color */
-}
-
-.register-link a {
-    color: var(--medium-purple); /* Updated link color */
+    transition: all 0.3s ease;
+    border-radius: 14px;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--seondary-background);
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Links */
+  .link {
+    color: var(--green-buttons-links);
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
-}
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: var(--seondary-background);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .card {
+      padding: 24px;
+    }
+  
+    input.form-control {
+      font-size: 14px;
+      padding-left: 12px;
+    }
+  
+    .btn-primary {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .main-slogan {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      padding: 16px;
+    }
+  
+    input.form-control {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  
+    .btn-primary {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .main-slogan {
+      font-size: 24px;
+    }
+  }
+  
