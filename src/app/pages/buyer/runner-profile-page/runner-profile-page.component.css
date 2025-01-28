@@ -1,49 +1,41 @@
 :root {
-    --medium-purple: #8968cd;
-    --deep-purple: #0a0612;
-    --lavender-blush: #fff0f5;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: var(--lavender-blush);
-    color: var(--deep-purple);
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    padding: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+  --green-buttons-links: #3c5a5d;
+  --white-background: #f6f6f6;
+  --black-text: #0c1415;
+  --seondary-background: #707f81;
+}
   
   .profile-wrapper {
-    background-color: var(--lavender-blush);
+    
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(225, 172, 172, 0.1);
     padding: 20px;
     margin-bottom: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    color:var(--black-text);
   }
   
   .runner-details {
+    background-color:var(--green-buttons-links);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    color: var(--white-background);
   }
   
   .runner-header {
     display: flex;
     align-items: center;
+    margin-left:20px;
   }
   
   .runner-avatar {
     border-radius: 50%;
-    width: 80px;  /* Adjusted size */
-    height: 80px;  /* Adjusted size */
+    width: 80px;  
+    height: 80px;  
     margin-right: 20px;
-    border: 3px solid var(--medium-purple);
-    object-fit: cover;  /* Ensures image doesn't stretch */
+    border: 3px solid var(--white-background);
+    object-fit: cover;  
   }
   
   .runner-info h2 {
@@ -51,9 +43,12 @@
     color: var(--deep-purple);
   }
   
+  .onlineIMg{
+ margin-right: 20px;
+  }
   .verification-badge {
-    background-color: var(--medium-purple);
-    color: white;
+    background-color: var(--seondary-background);
+    color:var(--white-background);
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 14px;
@@ -67,11 +62,11 @@
   
   .star {
     font-size: 18px;
-    color: var(--medium-purple);
+    color: var(--white-background);
   }
   
   .star.filled {
-    color: #ffcc00;
+    color: var(--seondary-background);
   }
   
   .rating-value {
@@ -80,9 +75,9 @@
   }
   
   .runner-reviews {
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 14px;
-    color: #666;
+    color: var(--white-background);
   }
   
   .product-catalog {
@@ -108,12 +103,45 @@
     width: 50%;
   }
   
+  .categoriesDiv {
+    display: flex;
+    gap: 20px; /* Spacing between each category */
+    justify-content: center; /* Centers the items horizontally */
+    flex-wrap: wrap; /* Wraps the items if there isn't enough space */
+  }
+  
+  .category {
+    text-align: center; /* Centers the image and h4 inside each category */
+  }
+  
+  .category img {
+    width: 100px; /* Circle size */
+    height: 100px;
+    border-radius: 50%; /* Makes the image a circle */
+    background-color: #3C5A5D; /* Circle background color */
+    padding: 10px; /* Space between image and background */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+  }
+  
+  .category h4 {
+    margin-top: 10px; /* Adds space between the image and text */
+    color: #333; /* Text color */
+    font-size: 16px; /* Text size */
+  }
+  
+
+
+
+
+
+  
 /* Styling for product cards */
 .card {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
   }
   
   .card img {
@@ -126,6 +154,15 @@
   .card-body {
     padding: 15px;
   }
+
+  .custom-btn {
+    background-color: #3C5A5D;
+    color: #f6f6f6;
+    width:50%;
+    height:30px;
+  }
+  
+  
   
   .card-title {
     font-size: 1.2rem;
@@ -134,7 +171,7 @@
   
   .card-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--black-text)
   }
   
   .product-price {
@@ -172,11 +209,12 @@
   
   .button-wrapper {
     display: flex;
-    gap: 15px; /* Adjusts space between buttons */
-    margin-top: 20px;  /* Adds space above the buttons */
+    gap: 15px; 
+    margin-top: 20px;  
+
   }
   
-   /* Base button styling */
+
    .btn {
     padding: 10px 20px;
     font-size: 14px;
@@ -190,6 +228,20 @@
   .button-wrapper {
     text-align: center;
   }
+  button{
+    width: 76px;
+    height: 16px;
+    overflow: visible;
+    color: #f6f6f6;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    width: 63px;
+    height: 14px;
+    border-radius: 4px;
+    background-color: var(--green-buttons-links);
+  }
+  
   
   .add-to-order {
     background-color: var(--medium-purple);
