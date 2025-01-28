@@ -20,6 +20,7 @@
     "@angular/router": "^18.2.0",
     "bootstrap": "^5.3.3",
     "i8-icon": "^0.9.4",
+    "nodemon": "^3.1.9",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

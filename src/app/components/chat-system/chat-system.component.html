@@ -9,10 +9,11 @@
       <div class="card chat-app">
         <div id="plist" class="people-list">
           <div class="input-group">
-            <div class="input-group-prepend">
+            <div class="input-group"> <!-- it was prepend, so i removed it so that it can be on 1 line...  -->
               <span class="input-group-text"><i class="fa fa-search"></i></span>
+              <input type="text" class="form-control" placeholder="Search..." />
             </div>
-            <input type="text" class="form-control" placeholder="Search..." />
+            
           </div>
           <ul class="list-unstyled chat-list mt-2 mb-0">
             <li class="clearfix">
@@ -87,6 +88,7 @@
                 </div>
               </div>
             </li>
+            
           </ul>
         </div>
         <div class="chat">
@@ -108,7 +110,7 @@
                   <small>Last seen: 2 hours ago</small>
                 </div>
               </div>
-              <div class="col-lg-6 hidden-sm text-right">
+              <div class="col-lg-3 hidden-sm text-right">
                 <a href="javascript:void(0);" class="btn btn-outline-secondary"
                   ><i class="fa fa-camera"></i
                 ></a>
@@ -157,14 +159,16 @@
           </div>
           <div class="chat-message clearfix">
             <div class="input-group mb-0">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-send"></i></span>
-              </div>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Enter text here..."
               />
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button"> 
+                  <i class="fa fa-send"></i> Send
+                </button>
+              </div>
             </div>
           </div>
         </div>
