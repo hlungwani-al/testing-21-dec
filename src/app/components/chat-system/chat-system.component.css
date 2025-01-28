@@ -1,13 +1,15 @@
 body {
-  background-color: #f4f7f6;
+  background-color: var(--seondary-background);
   margin-top: 20px;
+  
 }
 .card {
-  background: var(--seondary-background);
+  background: #ffffff;
   transition: 0.5s;
   border: 0;
+  margin-top: 6%;
   margin-bottom: 30px;
-  border-radius: 0.55rem;
+  border-radius: 0.66rem;
   position: relative;
   width: 100%;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
@@ -31,6 +33,7 @@ body {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: var(--green-buttons-links);
 }
 
 .people-list .chat-list li {
@@ -226,6 +229,8 @@ body {
   }
   .chat-app .chat .chat-header {
     border-radius: 0.55rem 0.55rem 0 0;
+    background-color: var(--green-buttons-links);
+
   }
   .chat-app .chat-history {
     height: 300px;
