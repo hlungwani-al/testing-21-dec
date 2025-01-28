@@ -1,40 +1,39 @@
-<div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
-  <div class="position-relative w-100" style="max-width: 400px;">
-
+<div class="container-fluid h-100 d-flex align-items-center justify-content-center bg-white">
+  <div class="card shadow-lg p-5 text-center">
+    
     <!-- Logo -->
-    <div class="text-center mb-4">
-      <div class="position-relative d-inline-block">
-        <img src="images/landing-logo.png" alt="Logo" class="position-absolute" style="width: 278px; height: 316px; margin-top: -295px; margin-left: -130px;" />
-      </div>
+    <div class="logo-container mb-6">
+      <img src="images/landing-logo.png" alt="Logo" class="img-fluid" style="width: 275px; height: 321px;" />
+    </div>
+    
+    <!-- Main Slogan -->
+    <div class="slogan mb-12 text-center">
+      <h1 class="main-slogan">
+        Sign In
+      </h1>
+    </div>
+    
+  <div class="input mb-5">
+
+  </div>
+    <!-- Email Input -->
+    <input type="email" class="form-control  px-3 py-2" placeholder="johndoe@gmail.com" />
+    
+    <!-- Password Input -->
+    <input type="password" class="form-control  px-3 py-2" placeholder="**************" />
+
+    <!-- Forgot Password Link -->
+    <div class="text-end mb-3">
+      <a href="#" class="forgot-password-link">Forgot Password?</a>
     </div>
 
-    <!-- Sign In Form -->
-    <div class="text-center">
-      <h2 class="fw-semibold text-dark">Sign In</h2>
-    </div>
-    <form class="mt-4">
-      <!-- Email Input -->
-      <div class="mb-3">
-        <input type="email" class="form-control rounded-pill px-3 py-2" placeholder="johndoe@gmail.com" />
-      </div>
-      <!-- Password Input -->
-      <div class="mb-3">
-        <input type="password" class="form-control rounded-pill px-3 py-2" placeholder="**************" />
-      </div>
-      <!-- Forgot Password -->
-      <div class="text-end">
-        <a href="#" class="link">Forgot Password?</a>
-      </div>
-      <!-- Sign In Button -->
-      <div class="d-grid mt-3">
-        <button type="submit" class="btn btn-primary rounded-pill py-2">Sign In</button>
-      </div>
-    </form>
+    <!-- Call-to-Action Button -->
+    <button type="button" class="btn btn-primary w-100 py-3 mb-3">Sign In</button>
 
-    <!-- Sign Up Link -->
-    <div class="text-center mt-4">
-      <span class="text-dark">Don’t have an account?</span>
-      <a href="#" class="link"> Sign Up</a>
-    </div>
+    <!-- Sign-Up Link -->
+    <p class="mt-4">
+      <span class="text-muted">Already have an account?</span>
+      <a href="#" class="link">Sign Up</a>
+    </p>
   </div>
 </div>

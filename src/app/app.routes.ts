@@ -17,7 +17,8 @@ export const routes: Routes = [
     {path: 'runner-list', component: RunnerListPageComponent},
     {path: 'runnerProfile', component:RunnerProfilePageComponent},
     {path: 'productDetails', component: ProductDetailsComponent},
-    {path: 'landingPage', component: LandingPageComponent},
+
+    {path: '', component: LandingPageComponent},
 
     //runner path
     {path: 'runner-login', component: RunnerAuthPageComponent},
