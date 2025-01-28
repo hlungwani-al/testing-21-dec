@@ -1,9 +1,28 @@
-<div class="container">
-  <div class="profile-wrapper">
-    <!-- Runner Details Section -->
+<div class="navbar-container">
+  <!-- Nav Bar with Search and Icons -->
+  <nav class="navbar navbar-expand-lg">
+    <!-- Logo -->
+    <div class="navbar-brand">Shaper</div>
+
+    <!-- Right Side Icons (Message, Cart, Profile) -->
+    <div class="navbar-icons">
+      <i class="bi bi-chat"></i>
+      <i class="bi bi-cart"></i>
+      <i class="bi bi-person-circle"></i>
+    </div>
+  </nav>
+
+  <!-- Back Arrow and Search Bar -->
+  <div class="search-container">
+    <button class="back-arrow-btn"><i class="bi bi-arrow-left"></i></button>
+    <input type="text" class="search-bar" placeholder="Search for products...">
+  </div>
+
+  <!-- Runner Details Section (Positioned After the Search) -->
+  <div class="runner-details-container">
     <div class="runner-details">
       <div class="runner-header">
-        <img  [src] = " runner" alt="Runner" class="runner-avatar">
+        <img [src]="runner" alt="Runner" class="runner-avatar">
         <div class="runner-info">
           <h2 class="runner-name">John Doe</h2>
           <div class="verification-badge">✔ Verified</div>
@@ -16,61 +35,67 @@
             <span class="rating-value">(3.0)</span>
           </div>
           <div class="runner-reviews">12 reviews</div>
-          <div class ="onlineIMg">
-            <img  [src]="onlineIcon" alt="https://img.icons8.com/ios-glyphs/30/full-stop--v1.png">
-            <span class="onlineStatus">online</span>
+          <div class="onlineIMg">
+            <img [src]="onlineIcon" alt="Online Status">
+            <span class="onlineStatus">Online</span>
           </div>
-           
         </div>
       </div>
     </div>
-  
-      <!-- Product Catalog Section -->
-
-    <div class="product-catalog">
-      <h3 class="catalog-heading">Product Catalog</h3>
-      <div class="category-filter mb-5">
-        <select class="category-select form-select">
-          <option value="all">All Categories</option>
-          <option value="clothing">Clothing</option>
-          <option value="kitchenware">Kitchenware</option>
-          <option value="home-decor">Home Decor</option>
-          <option value="hair-products">Hair Products</option>
-        </select>
-      </div>
-
-      <div class="categoriesDiv">
-        <div class="category">
-          <img [src]="categories[0]" alt="">
-          <h4>Clothes</h4>
-        </div>
-        <div class="category">
-          <img [src]="categories[1]" alt="">
-          <h4>Hair</h4>
-        </div>
-        <div class="category">
-          <img [src]="categories[2]" alt="">
-          <h4>Kitchen Wear</h4>
-        </div>
-        <div class="category">
-          <img [src]="categories[3]" alt="">
-          <h4>Event Décor</h4>
-        </div>
-        <div class="category">
-          <img [src]="categories[4]" alt="">
-          <h4>Home Décor</h4>
-        </div>
-      </div>
-      
-    </div>
-     
-  
-
-
-
-    <!-- Chat Option -->
-    <div class="chat-option mt-4">
-    <button class="btn chat-btn"><i class="bi bi-chat"></i> Chat with Runner</button>
   </div>
 </div>
-  
+
+<!-- Categories Section (5 Circles) -->
+<div class="categories-heading-container">
+  <h3 class="categories-heading">Categories</h3>
+  <div class="categories-container">
+    <div class="category-circle">
+      <img src="cat1.png" alt="Category 1" class="category-image">
+    </div>
+    <div class="category-circle">
+      <img src="cat2.png" alt="Category 2" class="category-image">
+    </div>
+    <div class="category-circle">
+      <img src="cat3.png" alt="Category 3" class="category-image">
+    </div>
+    <div class="category-circle">
+      <img src="cat4.png" alt="Category 4" class="category-image">
+    </div>
+    <div class="category-circle">
+      <img src="cat5.png" alt="Category 5" class="category-image">
+    </div>
+  </div>
+</div>
+
+<!-- Product Cards Section -->
+<div class="product-cards-container">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <img src="shirt.jpg" alt="T-shirt" class="product-img">
+    <div class="product-details">
+      <h5 class="product-title">T-shirt</h5>
+      <span class="product-price">R20.00</span>
+      <button class="btn btn-primary">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <img src="blender.jpg" alt="Blender" class="product-img">
+    <div class="product-details">
+      <h5 class="product-title">Blender</h5>
+      <span class="product-price">R80.00</span>
+      <button class="btn btn-primary">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <img src="vase.jpg" alt="Decorative Vase" class="product-img">
+    <div class="product-details">
+      <h5 class="product-title">Decorative Vase</h5>
+      <span class="product-price">R30.00</span>
+      <button class="btn btn-primary">View Details</button>
+    </div>
+  </div>
+</div>
