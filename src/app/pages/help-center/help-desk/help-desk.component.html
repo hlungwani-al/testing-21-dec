@@ -1,0 +1,114 @@
+<!-- tabs.component.html -->
+<div class="container mt-5">
+  <!-- Centered div that spans 9 columns -->
+  <div class="row justify-content-center">
+    <div class="col-9">
+      <!-- Tabs are laid out in 3 columns -->
+      <div class="row">
+        <div
+          class="col text-center"
+          [class.active]="selectedTab === 0"
+          (click)="selectTab(0)"
+        >
+          FAQ
+        </div>
+        <div
+          class="col text-center"
+          [class.active]="selectedTab === 1"
+          (click)="selectTab(1)"
+        >
+          Customer Services
+        </div>
+        <div
+          class="col text-center"
+          [class.active]="selectedTab === 2"
+          (click)="selectTab(2)"
+        >
+          Contact Us
+        </div>
+      </div>
+
+      <div class="tab-content mt-3">
+        <div *ngIf="selectedTab === 0">
+          <!-- FAQ's TAB -->
+
+          <div class="faq-container">
+            <div *ngFor="let faq of faqs; let i = index" class="faq-item">
+              <button (click)="toggleFaq(i)" class="faq-question">
+                {{ faq.question }}
+                <span>{{ faq.isOpen ? "▲" : "▼" }}</span>
+              </button>
+              <div *ngIf="faq.isOpen" class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="selectedTab === 1">
+          <!--Customer Services TAB   -->
+
+          <div class="customer-service-container">
+            <!-- Complaint Type Dropdown -->
+            <label for="complaint-type">Select Complaint Type:</label>
+            <select id="complaint-type" [(ngModel)]="selectedComplaint">
+              <option value="" disabled selected>Select an option</option>
+              <option *ngFor="let type of complaintTypes" [value]="type">{{ type }}</option>
+            </select>
+        
+            <!-- Add a Description -->
+            <label for="description">Description:</label>
+            <textarea id="description" [(ngModel)]="description" placeholder="Provide additional details here..."></textarea>
+        
+            <!-- Uoploading  -->
+            <label>Upload Supporting Evidence:</label>
+            <input type="file" (change)="onFileSelected($event)">
+            <p>{{ uploadedFileName }}</p>
+        
+            <!-- Button -->
+            <button (click)="submitComplaint()">Send</button>
+          </div>
+
+         
+        </div>
+        <div *ngIf="selectedTab === 2">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Order Date</th>
+                <th>Order No</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01 Jan 2025</td>
+                <td class="order-number">ASF6IHBIJOLKV</td>
+                <td>R900</td>
+                <td class="order-delivered">Delivered</td>
+              </tr>
+              <tr>
+                <td>04 Jan 2025</td>
+                <td class="order-number">WR79009NHIVU</td>
+                <td>R280</td>
+                <td class="order-delivered">Delivered</td>
+              </tr>
+              <tr>
+                <td>08 Jan 2025</td>
+                <td class="order-number">89SDIKIJLUOIPH</td>
+                <td>R457</td>
+                <td class="order-delivered">Delivered</td>
+              </tr>
+              <tr>
+                <td>10 Jan 2025</td>
+                <td class="order-number">DCJOLHFTDYT6</td>
+                <td>R290</td>
+                <td class="order-delivered">Delivered</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
