@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'help-desk',
   standalone: true,
-  imports: [NgIf, NgFor,FormsModule],
+  imports: [NgIf, NgFor, FormsModule],
   templateUrl: './help-desk.component.html',
   styleUrl: './help-desk.component.css',
 })
@@ -65,6 +65,14 @@ export class HelpDeskComponent {
   toggleFaq(index: number) {
     this.faqs[index].isOpen = !this.faqs[index].isOpen;
   }
+
+  // Contact Us
+  // activeIndex: number | null = null;
+  // showContactInfo = false;
+
+  // toggleContactUs() {
+  //   this.showContactInfo = !this.showContactInfo;
+  // }
 
   // Customer Service Section
   complaintTypes = [

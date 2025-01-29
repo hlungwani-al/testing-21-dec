@@ -52,61 +52,41 @@
             <label for="complaint-type">Select Complaint Type:</label>
             <select id="complaint-type" [(ngModel)]="selectedComplaint">
               <option value="" disabled selected>Select an option</option>
-              <option *ngFor="let type of complaintTypes" [value]="type">{{ type }}</option>
+              <option *ngFor="let type of complaintTypes" [value]="type">
+                {{ type }}
+              </option>
             </select>
-        
+
             <!-- Add a Description -->
             <label for="description">Description:</label>
-            <textarea id="description" [(ngModel)]="description" placeholder="Provide additional details here..."></textarea>
-        
+            <textarea
+              id="description"
+              [(ngModel)]="description"
+              placeholder="Provide additional details here..."
+            ></textarea>
+
             <!-- Uoploading  -->
             <label>Upload Supporting Evidence:</label>
-            <input type="file" (change)="onFileSelected($event)">
+            <input type="file" (change)="onFileSelected($event)" />
             <p>{{ uploadedFileName }}</p>
-        
+
             <!-- Button -->
             <button (click)="submitComplaint()">Send</button>
           </div>
-
-         
         </div>
         <div *ngIf="selectedTab === 2">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Order Date</th>
-                <th>Order No</th>
-                <th>Price</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>01 Jan 2025</td>
-                <td class="order-number">ASF6IHBIJOLKV</td>
-                <td>R900</td>
-                <td class="order-delivered">Delivered</td>
-              </tr>
-              <tr>
-                <td>04 Jan 2025</td>
-                <td class="order-number">WR79009NHIVU</td>
-                <td>R280</td>
-                <td class="order-delivered">Delivered</td>
-              </tr>
-              <tr>
-                <td>08 Jan 2025</td>
-                <td class="order-number">89SDIKIJLUOIPH</td>
-                <td>R457</td>
-                <td class="order-delivered">Delivered</td>
-              </tr>
-              <tr>
-                <td>10 Jan 2025</td>
-                <td class="order-number">DCJOLHFTDYT6</td>
-                <td>R290</td>
-                <td class="order-delivered">Delivered</td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- Contact Us-->
+
+          <div class="contact-container">
+            <!-- Almost implemented: <button class="contact-button" (click)="toggleContactUs()">Contact Us</button>    -->
+            <div class="contact-info">
+              <!-- thought of doing a function ( *ngIf="showContactInfo" ) -->
+              <h3>Customer Services</h3>
+              <p>(+27) 76 123 4566</p>
+              <p>(+27) 82 101 1111</p>
+              <p>(+27) 71 219 2066</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

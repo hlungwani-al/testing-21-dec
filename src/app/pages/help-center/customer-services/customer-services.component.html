@@ -1,0 +1,28 @@
+<div class="customer-service-container">
+  <h2>Customer Service</h2>
+
+  <!-- Complaint Type Dropdown -->
+  <label for="complaint-type">Select Complaint Type:</label>
+  <select id="complaint-type" [(ngModel)]="selectedComplaint">
+    <option value="" disabled selected>Select an option</option>
+    <option *ngFor="let type of complaintTypes" [value]="type">
+      {{ type }}
+    </option>
+  </select>
+
+  <!-- Description Text Area -->
+  <label for="description">Description:</label>
+  <textarea
+    id="description"
+    [(ngModel)]="description"
+    placeholder="Provide additional details here, such as the delivery issue or item condition..."
+  ></textarea>
+
+  <!-- File Upload -->
+  <label>Upload Supporting Evidence:</label>
+  <input type="file" (change)="onFileSelected($event)" />
+  <p>{{ uploadedFileName }}</p>
+
+  <!-- Send Button -->
+  <button (click)="submitComplaint()">Send</button>
+</div>
