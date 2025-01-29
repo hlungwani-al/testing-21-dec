@@ -10,6 +10,7 @@ import { CartComponent } from './pages/buyer/cart/cart.component';
 import { CheckoutPageComponent } from './pages/buyer/checkout-page/checkout-page.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ForgotPasswordComponent } from './pages/buyer/forgot-password/forgot-password.component';
+import { OrderDetailsPageComponent } from './pages/runner/order-details-page/order-details-page.component';
 import { SearchComponent } from './components/search/search.component';
 
 
@@ -28,6 +29,7 @@ export const routes: Routes = [
     //runner path
     {path: 'runner-login', component: RunnerAuthPageComponent},
     {path: 'runner-register', component: RunnerRegisterPageComponent},
+    {path: 'runner-orders', component: OrderDetailsPageComponent},
 
     {path: 'cart', component: CartComponent},
     {path: 'checkout', component:CheckoutPageComponent}

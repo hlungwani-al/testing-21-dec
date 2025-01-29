@@ -140,7 +140,7 @@ input::placeholder {
 
 .btn-primary:hover {
 
-  background-color: var(--seondary-background);
+  background-color: var(--secondary-background);
 
   transform: translateY(-2px);
 
@@ -168,7 +168,7 @@ input::placeholder {
 
 .link:hover {
 
-  color: var(--seondary-background);
+  color: var(--secondary-background);
 
 }
 
