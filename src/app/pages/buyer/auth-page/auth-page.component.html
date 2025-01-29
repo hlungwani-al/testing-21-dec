@@ -1,137 +1,126 @@
-<div class="container-fluid h-100 d-flex align-items-center justify-content-center bg-white"> 
+<div class="container-fluid h-100 d-flex align-items-center justify-content-center bg-white">
 
-  <div class="card shadow-lg p-5 text-center"> 
+  <div class="card shadow-lg p-5 text-center">
 
-    <div class="text-start mb-3"> 
+    <div class="text-start mb-3">
 
-      <img 
+      <img routerLink="/" class="back-icon" width="37" height="37"
+        src="https://img.icons8.com/ios/50/3c5a5d/circled-left-2.png" alt="Back" />
 
-      routerLink="/"
+    </div>
 
-        class="back-icon" 
+    <!-- Logo -->
 
-        width="37" 
+    <div class="logo-container mb-6">
 
-        height="37" 
+      <img src="images/landing-logo.png" alt="Logo" class="img-fluid" style="width: 275px; height: 321px;" />
 
-        src="https://img.icons8.com/ios/50/3c5a5d/circled-left-2.png" 
+    </div>
 
-        alt="Back" 
 
-      /> 
 
-    </div> 
+    <!-- Main Slogan -->
 
-    <!-- Logo --> 
+    <div class="slogan mb-12 text-center">
 
-    <div class="logo-container mb-6"> 
+      <h1 class="main-slogan">
 
-      <img src="images/landing-logo.png" alt="Logo" class="img-fluid" style="width: 275px; height: 321px;" /> 
+        Sign In
 
-    </div> 
+      </h1>
 
-     
+    </div>
 
-    <!-- Main Slogan --> 
 
-    <div class="slogan mb-12 text-center"> 
 
-      <h1 class="main-slogan"> 
+    <div class="input mb-5">
 
-        Sign In 
+    </div>
 
-      </h1> 
 
-    </div> 
 
-     
+    <!-- Email Input -->
 
-    <div class="input mb-5"> 
+    <input type="email" class="form-control px-3 py-2" placeholder="johndoe@gmail.com" />
 
-    </div> 
 
- 
 
-    <!-- Email Input --> 
+    <!-- Password Input -->
 
-    <input type="email" class="form-control px-3 py-2" placeholder="johndoe@gmail.com" /> 
+    <input type="password" class="form-control px-3 py-2" placeholder="**************" />
 
-     
 
-    <!-- Password Input --> 
 
-    <input type="password" class="form-control px-3 py-2" placeholder="**************" /> 
+    <!-- Forgot Password Link -->
 
- 
+    <div class="text-end mb-3">
 
-    <!-- Forgot Password Link --> 
+      <a href="#" class="forgot-password-link" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot
+        Password?</a>
 
-    <div class="text-end mb-3"> 
+    </div>
 
-      <a href="#" class="forgot-password-link" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password?</a> 
 
-    </div> 
 
- 
+    <!-- Call-to-Action Button -->
 
-    <!-- Call-to-Action Button --> 
+    <button type="button" class="btn btn-primary w-100 py-3 mb-3">Sign In</button>
 
-    <button type="button" class="btn btn-primary w-100 py-3 mb-3">Sign In</button> 
 
- 
 
-    <!-- Sign-Up Link --> 
+    <!-- Sign-Up Link -->
 
-    <p class="mt-4"> 
+    <p class="mt-4">
 
-      <span class="text-muted">Don't have an account?</span> 
+      <span class="text-muted">Don't have an account?</span>
 
-      <a routerLink="/buyer-register" class="link">Sign Up</a> 
+      <a routerLink="/buyer-register" class="link">Sign Up</a>
 
-    </p> 
+    </p>
 
-  </div> 
+  </div>
 
-</div> 
+</div>
 
-<!-- Forgot Password Modal --> 
+<!-- Forgot Password Modal -->
 
-<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true"> 
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
+  aria-hidden="true">
 
-  <div class="modal-dialog modal-dialog-centered"> 
+  <div class="modal-dialog modal-dialog-centered">
 
-    <div class="modal-content"> 
+    <div class="modal-content">
 
-      <div class="modal-header"> 
+      <div class="modal-header">
 
-        <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Password</h5> 
+        <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Password</h5>
 
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-      </div> 
+      </div>
 
-      <div class="modal-body"> 
+      <div class="modal-body">
 
-        <p class="text-muted">Please provide your email.</p> 
+        <p class="text-muted">Please provide your email.</p>
 
-        <form> 
+        <form>
 
-          <div class="mb-3"> 
+          <div class="mb-3">
 
-            <label for="emailInput" class="form-label">Email Address</label> 
+            <label for="emailInput" class="form-label">Email Address</label>
 
-            <input type="email" class="form-control" id="emailInput" placeholder="johndoe@gmail.com" required /> 
+            <input type="email" class="form-control" id="emailInput" placeholder="johndoe@gmail.com" required />
 
-          </div> 
+          </div>
 
-          <button type="submit" class="btn btn-primary w-100">Confirm Email</button> 
+          <button type="submit" class="btn btn-primary w-100">Confirm Email</button>
 
-        </form> 
+        </form>
 
-      </div> 
+      </div>
 
-    </div> 
+    </div>
 
-  </div> 
+  </div>
 
-</div> 
+</div>
