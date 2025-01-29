@@ -132,6 +132,7 @@ body {
   position: relative;
 }
 
+
 .chat .chat-history .message:after {
   bottom: 100%;
   left: 7%;
