@@ -1,1 +1,224 @@
-<p>order-details-page works!</p>
+
+ <!-- Back Icon and Title (Aligned) -->
+ <div class="d-flex align-items-center back-header mt-5" >
+    <img routerLink="/buyer-login" class="back-icon" width="37" height="37"
+      src="https://img.icons8.com/ios/50/3c5a5d/circled-left-2.png" alt="Back" />
+    <h1 class="main-slogan">My Orders</h1>
+  </div>
+
+
+  
+
+<!-- tabs.component.html -->
+<div class="container mt-5">
+
+
+
+    <!-- Centered div that spans 9 columns -->
+    <div class="row justify-content-center">
+      <div class="col-9">
+        <!-- Tabs are laid out in 3 columns -->
+        <div class="row">
+          <div class="col text-center" [class.active]="selectedTab === 0" (click)="selectTab(0)">
+            Pending
+          </div>
+          <div class="col text-center" [class.active]="selectedTab === 1" (click)="selectTab(1)">
+            In Progress
+          </div>
+          <div class="col text-center" [class.active]="selectedTab === 2" (click)="selectTab(2)">
+            Completed
+          </div>
+        </div>
+  
+        <div class="tab-content mt-3">
+          <div *ngIf="selectedTab === 0">
+            <!-- Pending Orders Table -->
+<table class="table ">
+    <thead>
+      <tr>
+        <th>Order Date</th>
+        <th>Order No</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 Jan 2025</td>
+        <td class="order-number">ASF6IHBIJOLKV</td>
+        <td>R900</td>
+        <td>Awaiting Approval</td>
+        <td>
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+            alt="Done" 
+            class="icon"
+          />
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+            alt="Close" 
+            class="icon"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>04 Jan 2025</td>
+        <td class="order-number">WR79009NHIVU</td>
+        <td>R280</td>
+        <td>Awaiting Approval</td>
+        <td>
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+            alt="Done" 
+            class="icon"
+          />
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+            alt="Close" 
+            class="icon"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>08 Jan 2025</td>
+        <td class="order-number">89SDIKIJLUOIPH</td>
+        <td>R457</td>
+        <td>Awaiting Approval</td>
+        <td>
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+            alt="Done" 
+            class="icon"
+          />
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+            alt="Close" 
+            class="icon"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>10 Jan 2025</td>
+        <td class="order-number">DCJOLHFTDYT6</td>
+        <td>R290</td>
+        <td>Awaiting Approval</td>
+        <td>
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+            alt="Done" 
+            class="icon"
+          />
+          <img 
+            src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+            alt="Close" 
+            class="icon"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+          </div>
+          <div *ngIf="selectedTab === 1">
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th>Order Date</th>
+                    <th>Order No</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01 Jan 2025</td>
+                    <td class="order-number">ASF6IHBIJOLKV</td>
+                    <td>R900</td>
+                    <td>
+                      <img 
+                        src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+                        alt="Done" 
+                        class="icon"
+                      />
+                      <img 
+                        src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+                        alt="Close" 
+                        class="icon"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>04 Jan 2025</td>
+                    <td class="order-number">WR79009NHIVU</td>
+                    <td>R280</td>
+                    <td>
+                      <img 
+                        src="https://img.icons8.com/ios-glyphs/30/3c5a5d/checkmark.png" 
+                        alt="Done" 
+                        class="icon"
+                      />
+                      <img 
+                        src="https://img.icons8.com/ios-glyphs/30/ff0000/delete-sign.png" 
+                        alt="Close" 
+                        class="icon"
+                      />
+                    </td>
+                  </tr>
+                
+                </tbody>
+              </table>
+          </div>
+          <div *ngIf="selectedTab === 2">
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th>Order Date</th>
+                    <th>Order No</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01 Jan 2025</td>
+                    <td class="order-number">ASF6IHBIJOLKV</td>
+                    <td>R900</td>
+                    <td class="order-delivered">Delivered</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>04 Jan 2025</td>
+                    <td class="order-number">WR79009NHIVU</td>
+                    <td>R280</td>
+                    <td class="order-delivered">Delivered</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>08 Jan 2025</td>
+                    <td class="order-number">89SDIKIJLUOIPH</td>
+                    <td>R457</td>
+                    <td class="order-delivered">Delivered</td>
+                   
+                  </tr>
+                  <tr>
+                    <td>10 Jan 2025</td>
+                    <td class="order-number">DCJOLHFTDYT6</td>
+                    <td>R290</td>
+                    <td class="order-delivered">Delivered</td>
+                   
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Pending Buttons (Only visible when "Pending" tab is active) -->
+<div class="pending-btns d-flex mt-5" *ngIf="selectedTab === 0">
+    <button type="button" class="btn btnAccept px-4 py-2">Accept All</button>
+    <button type="button" class="btn btnReject px-4 py-2 ms-4">Decline All</button>
+  </div>
