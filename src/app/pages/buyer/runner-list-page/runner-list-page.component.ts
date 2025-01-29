@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './runner-list-page.component.css'
 })
 export class RunnerListPageComponent {
-
+  runnerImage = "/images/images.jpeg";
 }

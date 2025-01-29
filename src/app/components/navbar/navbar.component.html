@@ -1,1 +1,43 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="images/logo-black.png" width="70rem" alt="EasyErrands" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/messages" routerLinkActive="active"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADc0lEQVR4nO2XS2gUQRCGNxrEB1HwBQqKIL4VFIm40727gg/EkwjjTFVXZZNVgiBCyMUHxiBeBMGDehFveosIIoioqEcRxLcIHvSioiYalCiaxER6Jj07azbuzm42HtyGhqGmp+brqr9qemKxMRoJp3GeBHVIAt2WyG8l8k8B1C2An0vksxbwtlgsVhMb67HJtqcJ5HMSqFciD/5tCuAnCYesMYOTDi8WSK8LgeVAIvdZyHsqDpdQao4EehMFLjQHLGSnooAS6FKJcP4E6koBzKwMnMOLdRTKAvQ1eaAigALpYDYS/EECXRfI/SGd9Wubdy83ag8l8KPsOrpXIUA+Z15iKbXEswG3hV58WNuSDi8LbeRRrL19nJ4C6bFvp085jpOIqwTwu9JSQlfzAcYhvVTbJPCRUOra8gA+TaVStbmA/N1zuLa5ebJxbjkNCwXwq8h6QXpgfEjg1pD9o0S+MSzFns27F0oxPw3B6Y089x0inxVKrQ8gXXeuRHoWsep6rUymzjyv+1m5RSKBTxjADgHcI1zabCDrmWdokUaLImMQReTjZbaZb4J5fgA4lI4fAnlHEMlMpk4g34qgw/vme5pKpydK4DslAg5IoKagOAxgoI/QTf0iAXQ5ghb3Bn6VWh5dy9wnFLfkVG8YMLsDbg0gU6laAXS+mJ0nQO0Oqrm4Z8Kbe5z3sJAH0Ij0WGhZjUA6VSDF+83iBFLjH5r6KoAuCuSXWkpD/r/o6pfIp6VSG4eBFQT0nZzxGqiJCtLREeBeGP1JoO0S6JcXFaBuDRAnmh2LeH4sDtAP/QWviRpIxS15vrVXAn920yx9AI0TrVxu2xNMBgpB6bXSpa3eZxC5o2hAA6ALJtghUmO4+Urk95uJphSCWG/bkwTSLuGqnZ4MXN6n+51AviaRP4f8RQbU6b6zTqmpQSSRdwR68tN8U0dNr0m6vEYCuRrIrNf2CK2nBEAf4r5OYTbdaoMugGGyAO6xVMOWbOR2TZfAdyNUdamAfkGERRxXql4gd2bhqDvcLvTpWv9vRHtHWYBe4bxOAiwyPlJOeoEAPqmnvjZ2vSbqf8moAJrCsDC9eqSCEG7DiqFfzMF/BTjoNWDFGdu2xxt/+lpXaj5tjj0gmpRzp3+M92ZXuf5GHVCO/qwCDlYjKKsa5OKKpDqqozqq4z8evwHHpbKjggGIDgAAAABJRU5ErkJggg=="
+                            alt="envelope-dots"></a>
+                </li>
+                <!-- Show these items when user is logged in as buyer -->
+                <ng-container>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/cart" routerLinkActive="active"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVR4nO2Yv0scURDHHxJJmhCUVBZJp5DCxkb3vWObkFyfnLczb+YOLnCdZQhqsWBsU6WMVboUKUxjaytC8g+ki4I2oiaN4i9m1yOXOyJ7t/seW9wXBh4LA5+d7+57M0+pkQpQGIb3KsAvDXJNIl3jhCqLDPB7g3z9TwCfCKwqgwzSWh9gGmea+UkpLA5s40XHYo304S8kxapsqlaX7mvk37eAu6qMMsCbt1W8CqJoSpVNBqndsVlbbqmyKYiiKale+kfTV1VGGaAf3VuOl4gas5kBNdL6f7YfZ6GRLzJDBsALvgFNEk2drYRxPGaAD73CAZ3Otdvj2W0G+uy5gt8ywyU2I9e9Aka8NBDg81rtkQE69wUYWDujBpVG2vYBp4F/qWFUAX7rBRD501CAxtpnXgAjuzgUYAKJ9NMpINBlCPA4ByB/dGsv7QwNlwBGVHUMuF5gE+vCYg5zAfY0scVWD/iPFCA3YAXolaPqbahCFMdjGnmrWDjaK3RyDJvNBzLpJdsO0GUOuANpRBYQnxYGN1LRw77BppaQddY8U+dpuSSYr72ZVK4UtFoPZaA3XaeAPMt4B5ROishHgbUVJ4AGeLX/b7Qrd+bUeboLrvNi310Bbgy6lwXp3U/P8cbHTgClLeoDtI3Xd+XINye29uR9cQKYQCItG+T9NOhdlhz55sRWqZzA5WqvRhpJ+dEN8ZAva7bQEvYAAAAASUVORK5CYII="
+                                alt="cart"></a>
+                    </li>
+                </ng-container>
+                <!-- Show these items when user is logged in as runner -->
+                <ng-container>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/cart" routerLinkActive="active"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVR4nO2YwUrDQBCGowcv6hv4BOpB8aKZqT317CmYncxY6FN4UHr1LJ6sR0GpL+AzePENvAieiyIiBCKxSbuXtGm6CbHuDwOBDDvf/jvLsus4VlY1Fyq5AZIQSaKyAkg+GiRHhQDLhsMx5F0xB9MBlLwiSb+EiJLozwVYeIApsoC1dbAZBBtI4sURf2v53qSoDDApGCUxKjxtt1rAP7PEpoT/FhDtJpnTQQiC/fQ8jb+1/Ilnb97xF78Haw8IdV9itLt40XvQlNACVu2gqXswkIRA0jMOCIq/DN51w03PW8mqFf/T8m9zAsqLyQv5oS+72e6197Tci3yAJD2TgKj4PtsMfhi57XMrF+AB87bp5w4gvmwxr6Y1mp63hkqutEk8O93uci7A4czk3KiL9NuPAyB+HIYMNLhPl9o7zoxaAuKz0l+1lLw1jtmdFW7spH+yBYqvk43zbagn31HJEyg5dTud9cJwVlZONfoBL43EZXkHuCoAAAAASUVORK5CYII="
+                                alt="orders"></a>
+                    </li>
+                </ng-container>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADI0lEQVR4nO2Yu2sUYRDATxAf+KgVfDUGTCEoInrfXFYLIbVmvZ35Zu4kvX+AmkaNFmLlE1+dqEWqWEdRUWNQFOy0NBEfjUnURI1GZi+brPEu++09IsINDLfH7s7+ZuabmW83k2lKU/5T2W7tSggsGpIrgDJgiD8A8nfV0rEMGOTLgBxkOztXzBsY5KUFkK8B8hcgmXRSvRblahvixoaB7fD9pYB82pD8cAajv0A1uqe8YnFJXeHUc0B5WTUYzQaVxzlrV9cHLpAt4ZqqFxyV1KC8gaCwuebINQIOYpCeX1xVFZyuE0B50Sg4mFZ+qus7NaAWROPhpBRJ4qPp4PLSkqJafwHJ9ay1uT3My1RzVGgzJDemzjkAymiqVId9zs3whDbrSnayyDa8xs3WBfcJ4dyE+Vh0n+d5C4GKRlWPZ5yV444F89nz/eXJ0QssOqb2azTC9FdHW2xNPYkepg4b5DEXm1mSfCJgOFudPOZ7sSgdKbPwD8XO33d0+lJyBGORSFgzPTP38K0y52/GnO5xtNnvEsGP/woQUN4nR5DkW/oU28Nzppj4gZvTPO4QQR53BByLikQLQgsjnqpqisQV0Hn2GuLu6D5tLbk8Z1VntZmTrvaA5J0DoPS7A8qEIaFKtiAoMCD/dAfkR4mAWuopPJ7UcRaONRRP06ppN9bu0iJxHXUzRcIXkyMY2P0pASfrpYZkbyJgGAGS0XkHRB5xGnXVpNmQfDIkD4Gk1yDfDo9Rhuue3ki8fHFDUj80JK8MyQl9JahgZkHO2q1hFaO8ntsWj+8kWu8MOFd7MCR9ut9LZSwT2vMA5W7SrshZ2tsPLgbk5zGwUW0bZbdnttBhiLt0o1FS7soh7yv3wm6QC7q1mraL8qzV9xdlqhENuzZPhdN0xc9lqbC7tN4qT56pCdKr0fvj3kC2KaRBeZvLH1ibqUXA2lb1OvqvBgH5ThUtpM+zdk1kR2225WVTTXBlgZEHa2glg5lGS009Enmk8YAi6wzxeX0YOIPJMKCcq3m9pf6YZAsdQHJWv7UAyZC+p0zpkA5+Q3xGq7nuH4ua0pTM/MlvEcBx0Yt5q2QAAAAASUVORK5CYII="
+                            alt="account"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
