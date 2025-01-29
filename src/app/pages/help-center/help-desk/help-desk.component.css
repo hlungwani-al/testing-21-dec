@@ -1,0 +1,118 @@
+.faq-customer-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* FAQ Section */
+.faq-container {
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--black-text);
+}
+
+/* FAQ Item */
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid var(--secondary-background);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: var(--green-buttons-links);
+  color: var(--white-background);
+  border: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-question:hover {
+  background-color: var(--secondary-background);
+}
+
+.faq-answer {
+  padding: 15px;
+  background: var(--white-background);
+  border-top: 1px solid var(--secondary-background);
+  color: var(--black-text);
+  font-size: 14px;
+}
+
+.customer-service-container {
+  padding: 20px;
+  border: 1px solid var(--secondary-background);
+  border-radius: 10px;
+  background: var(--white-background);
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+}
+
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--secondary-background);
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: var(--green-buttons-links);
+  color: var(--white-background);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--secondary-background);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .faq-customer-container {
+    padding: 10px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+}
