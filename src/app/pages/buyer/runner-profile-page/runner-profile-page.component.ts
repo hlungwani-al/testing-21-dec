@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { CategoriesComponent } from '../../../components/categories/categories.component';
 
 @Component({
   selector: 'app-runner-profile-page',
   standalone: true,
-  imports: [RouterLink, CommonModule, NgFor],
+  imports: [RouterLink, CommonModule, NgFor,CategoriesComponent,RouterOutlet],
   templateUrl: './runner-profile-page.component.html',
   styleUrls: ['./runner-profile-page.component.css']
 })

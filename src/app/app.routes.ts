@@ -11,6 +11,7 @@ import { CheckoutPageComponent } from './pages/buyer/checkout-page/checkout-page
 
 
 export const routes: Routes = [
+    
     {path: 'buyer-login', component: AuthPageComponent},
     {path: 'buyer-register', component: RegisterPageComponent},
     {path: 'runner-list', component: RunnerListPageComponent},

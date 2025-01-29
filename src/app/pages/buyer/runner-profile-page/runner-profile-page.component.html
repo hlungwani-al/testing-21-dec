@@ -13,7 +13,7 @@
 
   <!-- Search Bar with Back Button -->
   <div class="d-flex align-items-center gap-2 p-2">
-    <button class="btn btn-light"><i class="bi bi-arrow-left fs-4"></i></button>
+    <!-- <button class="btn btn-light"><i class="bi bi-arrow-left fs-4"></i></button> -->
     <input type="text" class="form-control" placeholder="Search for products...">
   </div>
 
@@ -53,7 +53,9 @@
   </div>
 
   <!-- Categories -->
-  <h4 class="mt-3 text-dark">Categories</h4>
+<router-outlet/>
+    <app-categories></app-categories> 
+  <!-- <h4 class="mt-3 text-dark">Categories</h4>
   <div class="categories-container d-flex justify-content-center gap-3 flex-wrap">
     <div class="category-circle">
       <img [src]="categories[0]" alt="Category 1" class="category-image">
@@ -78,7 +80,7 @@
       <div class="category-name">Home</div>
       <div class="category-name">Décor</div>
     </div>
-</div>
+</div> -->
 
 <div class="chat-container">
   <button class="btn btn-sm custom-btn-chat">
