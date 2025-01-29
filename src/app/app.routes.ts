@@ -11,7 +11,7 @@ import { CheckoutPageComponent } from './pages/buyer/checkout-page/checkout-page
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ForgotPasswordComponent } from './pages/buyer/forgot-password/forgot-password.component';
 import { OrderDetailsPageComponent } from './pages/runner/order-details-page/order-details-page.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 export const routes: Routes = [
@@ -24,7 +24,7 @@ export const routes: Routes = [
 
 
     {path: '', component: LandingPageComponent},
-    {path: 'navbar', component: NavbarComponent},
+    {path: 'navbar', component: SearchComponent},
 
     //runner path
     {path: 'runner-login', component: RunnerAuthPageComponent},

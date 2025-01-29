@@ -1,0 +1,25 @@
+.search-bar {
+  max-width: 500px;
+  margin: auto auto;
+}
+
+.search-bar .input-group {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px var(--green-buttons-links);
+}
+
+.search-bar .form-control {
+  background-color: var(--white-background);
+  border: none;
+}
+
+.search-bar .btn {
+  background-color: var(--white-background);
+  border: none;
+  padding: 10px 20px;
+}
+.btn:hover {
+  background-color: var(--white-background);
+  color: var(--green-buttons-links);
+}
