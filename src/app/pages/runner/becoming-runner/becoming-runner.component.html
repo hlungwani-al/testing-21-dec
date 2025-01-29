@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="form-container">
+    <img width="50" height="50" src="https://img.icons8.com/ios/50/3c5a5d/circled-left-2.png" alt="circled-left-2"/>
+      <h2 class="text-center fw-bold">Profile</h2>
+      <form>
+          <!-- SA Identification -->
+          <div class="mb-3">
+              <label for="idNumber" class="form-label fw-semibold">SA Identification</label>
+              <input type="text" id="idNumber" class="form-control" placeholder="Enter Id number" [(ngModel)]="runnerDetails.idNumber" name="idNumber" />
+          </div>
+
+          <br>
+
+          <!-- Upload Certified ID -->
+          <div class="mb-3">
+              <label class="form-label fw-semibold">Upload Certified ID</label>
+              <div class="upload-box" onclick="document.getElementById('uploadCertifiedId').click();">
+                  <span class="me-2">➕</span>
+                  <input type="file" class="d-none" id="uploadCertifiedId" (change)="handleFileInput($event, 'id')" />
+                  <label for="uploadCertifiedId" class="m-0">Upload Certified ID</label>
+              </div>
+          </div>
+
+          <!-- Upload Profile Picture -->
+          <div class="mb-4">
+              <label class="form-label fw-semibold">Upload Picture</label>
+              <div class="upload-box" onclick="document.getElementById('uploadProfilePic').click();">
+                  <span class="me-2">➕</span>
+                  <input type="file" class="d-none" id="uploadProfilePic" (change)="handleFileInput($event, 'profile')" />
+                  <label for="uploadProfilePic" class="m-0">Upload Picture</label>
+              </div>
+          </div>
+
+          <br>
+
+          <!-- Subscription -->
+          <div class="mb-3">
+              <label class="form-label ">Subscription</label>
+              <select class="form-control custom-select" [(ngModel)]="runnerDetails.subscriptionType" name="subscriptionType">
+                  <option selected disabled>Options</option>
+                  <option value="Options">Options</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Yearly">Yearly</option>
+              </select>
+          </div>
+
+          <!-- Amount -->
+          <div class="mb-3 d-flex justify-content-between">
+              <label class="form-label ">Amount</label>
+              <span class="fw-bold text-dark">{{ runnerDetails.amount }}</span>
+          </div>
+
+          <p class="text-end text-muted">Pay Now</p>
+          <br>
+
+          <!-- Apply Button -->
+          <div class="text-center">
+              <button type="button" class="btn  w-100 py-2" (click)="applyAsRunner()">Apply</button>
+          </div>
+      </form>
+  </div>
+</div>
+
