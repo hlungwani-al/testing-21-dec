@@ -10,6 +10,7 @@ import { CartComponent } from './pages/buyer/cart/cart.component';
 import { CheckoutPageComponent } from './pages/buyer/checkout-page/checkout-page.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ForgotPasswordComponent } from './pages/buyer/forgot-password/forgot-password.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 export const routes: Routes = [
@@ -19,9 +20,10 @@ export const routes: Routes = [
     {path: 'runnerProfile', component:RunnerProfilePageComponent},
     {path: 'productDetails', component: ProductDetailsComponent},
     { path: 'forgot-password', component: ForgotPasswordComponent },
-//   { path: '', redirectTo: '/', pathMatch: 'full' },
+
 
     {path: '', component: LandingPageComponent},
+    {path: 'navbar', component: NavbarComponent},
 
     //runner path
     {path: 'runner-login', component: RunnerAuthPageComponent},
