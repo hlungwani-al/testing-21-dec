@@ -1,7 +1,7 @@
 /* tabs.component.css */
 
 .pending-btns{
-    padding-left: 390px;
+    padding-left: 200px;
 
 }
 .btnAccept{
@@ -11,8 +11,12 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600; /* Semi-Bold */
     font-size: 15px;
-    
+}
 
+
+.btnAccept:hover{
+    background-color: var(--secondary-background);
+    color: var(--white-background);
 }
 .btnReject{
     background-color: var(--green-buttons-links);
@@ -23,11 +27,14 @@
     font-size: 15px;
 
 }
+.btnReject:hover{
+    color: var(--white-background);
+    background-color: var(--secondary-background);
+}
 .container{
     margin-top: 200px;
     
 }
-
 
 
 .tab-titles {
@@ -40,9 +47,11 @@
     text-align: left;
     padding: 20px;
   }
+
   .order-number{
-    color: var(--seondary-background);
+    color: var(--secondary-background);
   }
+
   .order-delivered{
     color: var(--black-text);
     font-family: 'Inter', sans-serif;
@@ -57,7 +66,7 @@
     padding-left: 390px;
   }
   .back-header{
-    margin-left: 335px;
+    margin-left: 200px;
   }
 
 
@@ -97,7 +106,7 @@
   .col {
     padding: 10px;
     cursor: pointer;
-    color: var(--seondary-background);
+    color: var(--secondary-background);
     font-family: 'Inter', sans-serif;
     font-weight: 600; /* Semi-Bold */
     font-size: 18px;
@@ -122,13 +131,15 @@
     max-width: 100%;
     border-collapse: collapse;
     padding: 5px;
+    border-spacing: 5px;
+    
   }
   
 
   th{
     padding: 10px;
     cursor: pointer;
-    color: var(--seondary-background);
+    color: var(--secondary-background);
     font-family: 'Inter', sans-serif;
     font-weight: 600; /* Semi-Bold */
     font-size: 12px;
