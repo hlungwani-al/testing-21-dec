@@ -1,0 +1,58 @@
+:root {
+  --green-buttons-links: #3c5a5d;
+  --white-background: #f6f6f6;
+  --black-text: #0c1415;
+  --seondary-background: #707f81;
+}
+
+@media (min-width: 1024px) {
+  .category-circle img {
+    width: 60px; 
+    height: 60px;
+  }
+  .category-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .category-circle{
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .category-circle img {
+    width: 80px;
+    height: 80px;
+  }
+  .category-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .category-circle {
+   
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: var(--white-background)
+   
+    }
+  
+    .category-name {
+      margin-top: 5px;
+      font-size: 1rem;
+      color: var(--black-text)
+    }
+  }
+
+ 
+}
+
+
+
+
+

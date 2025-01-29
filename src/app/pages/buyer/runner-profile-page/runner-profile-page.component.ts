@@ -19,13 +19,7 @@ export class RunnerProfilePageComponent {
   onlineIcon = "images/online.png";
   chatButton ="images/chat.png"
   
-  categories = [
-    "categories/clothes1.png",
-    "categories/woman-s-hair0.png",
-    "categories/kitchenwares0.png",
-    "categories/party-balloons0.png",
-    "categories/baby-mobile0.png"
-  ];
+
 
   products = [
     { title: 'T-shirt', price: 120, image: 'products/shirt.webp' },
