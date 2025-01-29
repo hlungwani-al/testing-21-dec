@@ -151,7 +151,7 @@
   }
   
   .add-to-order-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--deep-purple);
   }
   
   /* Make the cards responsive */

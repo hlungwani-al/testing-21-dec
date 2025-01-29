@@ -1,30 +1,128 @@
-<div class="container">
-  <div class="content-wrapper">
-    <!-- Image Section -->
-    <div class="image-section">
-      <img src="images/landingPic.png" class="rounded" alt="...">
+<div class="container-fluid h-100 d-flex align-items-center justify-content-center bg-white">
+
+  <div class="card shadow-lg p-5 text-center">
+
+    <div class="text-start mb-3">
+
+      <img routerLink="/" class="back-icon" width="37" height="37"
+        src="https://img.icons8.com/ios/50/3c5a5d/circled-left-2.png" alt="Back" />
+
     </div>
 
-    <!-- Login Form Section -->
-    <div class="form-card">
-      <div class="heading">Login</div>
+    <!-- Logo -->
 
-      <div class="input-group">
-        <input type="text" placeholder="Email" #email class="input" />
-      </div>
+    <div class="logo-container mb-6">
 
-      <div class="input-group">
-        <input type="password" placeholder="Password" #password class="input" />
-      </div>
+      <img src="images/landing-logo.png" alt="Logo" class="img-fluid" style="width: 275px; height: 321px;" />
 
-      <button routerLink="/runner-list" type="button" class="login-btn">
-        Login
-      </button>
-
-      <div class="register-link">
-        Don't have an account?
-        <a routerLink="/buyer-register">Register</a>
-      </div>
     </div>
+
+
+
+    <!-- Main Slogan -->
+
+    <div class="slogan mb-12 text-center">
+
+      <h1 class="main-slogan">
+
+        Sign In
+
+      </h1>
+
+    </div>
+
+
+
+    <div class="input mb-5">
+
+    </div>
+
+
+
+    <!-- Email Input -->
+
+    <input type="email" class="form-control px-3 py-2" placeholder="johndoe@gmail.com" />
+
+
+
+    <!-- Password Input -->
+
+    <input type="password" class="form-control px-3 py-2" placeholder="**************" />
+
+
+
+    <!-- Forgot Password Link -->
+
+    <div class="text-end mb-3">
+
+      <a href="#" class="forgot-password-link" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot
+        Password?</a>
+
+    </div>
+
+
+
+    <!-- Call-to-Action Button -->
+
+    <button type="button" class="btn btn-primary w-100 py-3 mb-3">Sign In</button>
+
+
+
+    <!-- Sign-Up Link -->
+
+    <p class="mt-4">
+
+      <span class="text-muted">Don't have an account?</span>
+
+      <a routerLink="/buyer-register" class="link">Sign Up</a>
+
+    </p>
+
   </div>
+
+</div>
+
+<!-- Forgot Password Modal -->
+
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Password</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <p class="text-muted">Please provide your email.</p>
+
+        <form>
+
+          <div class="mb-3">
+
+            <label for="emailInput" class="form-label">Email Address</label>
+
+            <input type="email" class="form-control" id="emailInput" placeholder="johndoe@gmail.com" required />
+
+          </div>
+
+          <button routerLink="/forgot-password" type="submit" class="btn btn-primary w-100" data-bs-dismiss="modal">
+            Confirm Email
+          </button>
+          
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
