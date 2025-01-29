@@ -15,6 +15,7 @@ import { SearchComponent } from './components/search/search.component';
 
 
 export const routes: Routes = [
+    
     {path: 'buyer-login', component: AuthPageComponent},
     {path: 'buyer-register', component: RegisterPageComponent},
     {path: 'runner-list', component: RunnerListPageComponent},

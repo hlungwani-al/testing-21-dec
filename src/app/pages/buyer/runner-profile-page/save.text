@@ -1,0 +1,60 @@
+  <!-- Product 2: Blender -->
+          <div class="col-md-3">
+            <div class="card">
+              <img [src]="blender" alt="Kitchenware" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Blender</h5>
+                <!-- <p class="card-text">High-speed blender for smoothies and more.</p> -->
+                <span class="product-price">R80.00</span>
+                <button 
+  routerLink="/productDetails" 
+  class="btn btn-primary custom-btn" 
+  data-product="Blender">
+  View Details
+</button>
+
+            </div>
+
+
+  <!-- Product 3: Decorative Vase -->
+          <div class="col-md-3">
+            <div class="card">
+              <img [src]="decorative" alt="Home Decor" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Decorative Vase</h5>
+                <!-- <p class="card-text">Elegant glass vase for home decoration.</p> -->
+                <span class="product-price">R30.00</span>
+                <button routerLink="/productDetails" class="btn btn-primary add-to-order-btn" data-product="Decorative Vase">View Details</button>
+              </div>
+            </div>
+          </div>
+
+
+ <!-- Product 4: Blender -->
+        <div class="col-md-3">
+            <div class="card">
+              <img [src]="bread" alt="Kitchenware" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">4pc Set</h5>
+                <!-- <p class="card-text">Bread Bin & Canister Set - 4pc Tin.</p> -->
+                <span class="product-price">R110.00</span>
+                <button routerLink="/productDetails" class="btn btn-primary add-to-order-btn" data-product="Blender">View Details</button>
+              </div>
+            </div>
+          </div>
+
+           <!-- Product Cards -->
+        <div class="row">
+          <!-- Product 1: T-shirt -->
+          <div class="col-md-3">
+            <div class="card">
+              <img [src]="shirt" alt="Clothing" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">T-shirt</h5>
+                <!-- <p class="card-text">Comfortable cotton T-shirt available in various colors.</p> -->
+                <span class="product-price">R20.00</span>
+                <button routerLink="/productDetails" >View Details</button>
+                
+              </div>
+            </div>
+          </div>
