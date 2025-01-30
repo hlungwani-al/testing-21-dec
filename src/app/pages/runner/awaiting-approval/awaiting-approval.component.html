@@ -1,0 +1,71 @@
+<div class="runner-processing-order-details">
+  <!-- Header -->
+  <div class="header">
+    <img class="back-arrow" src="back-arrow.png" alt="Back Arrow" />
+    <h2>Order Details</h2>
+    <button class="chat-buyer">Chat with Buyer</button>
+  </div>
+
+  <!-- Items List -->
+  <div class="items-list">
+    <div *ngFor="let item of orderItems" class="item">
+      <img class="item-image" [src]="item.image" [alt]="item.name" />
+      <div class="item-details">
+        <div class="item-name">{{ item.name }}</div>
+        <div class="item-description">
+          <strong>Category:</strong> {{ item.category }}<br />
+          <strong>Quantity:</strong> {{ item.quantity }}<br />
+          <span class="item-price"> R {{ item.price }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Summary -->
+  <div class="order-summary">
+    <div class="summary-row">
+      <!-- this is going to be a link so you can route to another page -->
+
+      <span><strong>Order Number</strong></span>
+      <span>{{ orderDetails.orderNumber }}</span>
+    </div>
+    <div class="summary-row">
+      <span><strong>Order Date</strong></span>
+      <span>{{ orderDetails.orderDate }}</span>
+    </div>
+    <div class="summary-row">
+      <span><strong>Order Status</strong></span>
+      <span>{{ orderDetails.status }}</span>
+    </div>
+    <div class="summary-row">
+      <span><strong>Ship to</strong></span>
+      <span>{{ orderDetails.shipTo }}</span>
+    </div>
+    <hr />
+    <div class="summary-row">
+      <span><strong>Amount</strong></span>
+      <span>R {{ orderDetails.amount }}</span>
+    </div>
+    <div class="summary-row">
+      <span><strong>Refund</strong></span>
+      <span>-R {{ orderDetails.refund }}</span>
+    </div>
+    <hr />
+    <div class="summary-row total">
+      <span><strong>Total Amount</strong></span>
+      <span>R {{ orderDetails.total }}</span>
+    </div>
+    <div class="summary-row">
+      <span><strong>Ship Order?</strong></span>
+      <input type="checkbox" [(ngModel)]="orderDetails.shipOrder" />
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button class="approve" (click)="approveOrder()">Approve</button>
+    <!-- complete-->
+    <button class="reject" (click)="rejectOrder()">Reject</button>
+    <!-- reject -->
+  </div>
+</div>
