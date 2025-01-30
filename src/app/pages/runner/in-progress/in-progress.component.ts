@@ -3,13 +3,13 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'available-orders-page',
+  selector: 'in-progress',
   standalone: true,
-  imports: [FormsModule,NgFor],
-  templateUrl: './available-orders-page.component.html',
-  styleUrl: './available-orders-page.component.css',
+  imports: [NgFor,FormsModule],
+  templateUrl: './in-progress.component.html',
+  styleUrl: './in-progress.component.css'
 })
-export class AvailableOrdersPageComponent {
+export class InProgressComponent {
   orderDetails = {
     orderNumber: 'ASF6IHBIJOLKV',
     orderDate: '01 Jan 2025',
@@ -59,4 +59,5 @@ export class AvailableOrdersPageComponent {
   cancelOrder(): void {
     console.log('Order canceled');
   }
+
 }

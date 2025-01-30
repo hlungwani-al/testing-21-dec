@@ -52,13 +52,13 @@
   color: #555;
 }
 /* .shipped-status {
-  color: green;
-  font-weight: bold;
-}
-.not-shipped-status {
-  color: red;
-  font-weight: bold;
-} */
+    color: green;
+    font-weight: bold;
+  }
+  .not-shipped-status {
+    color: red;
+    font-weight: bold;
+  } */
 .item-price {
   font-weight: bold;
   text-align: right;
@@ -115,5 +115,4 @@
     display: flex;
     gap: 10px;
   }
-
 }
