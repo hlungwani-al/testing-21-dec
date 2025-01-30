@@ -5,15 +5,15 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'in-progress',
   standalone: true,
-  imports: [NgFor,FormsModule],
+  imports: [NgFor, FormsModule],
   templateUrl: './in-progress.component.html',
-  styleUrl: './in-progress.component.css'
+  styleUrl: './in-progress.component.css',
 })
 export class InProgressComponent {
   orderDetails = {
     orderNumber: 'ASF6IHBIJOLKV',
     orderDate: '01 Jan 2025',
-    status: 'Processing',
+    status: 'In Progress',
     shipTo: 'Qunice Auckland Park',
     amount: 900,
     refund: 400,
@@ -59,5 +59,4 @@ export class InProgressComponent {
   cancelOrder(): void {
     console.log('Order canceled');
   }
-
 }
