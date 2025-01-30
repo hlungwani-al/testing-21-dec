@@ -4,7 +4,6 @@
 }
 
 .navbar .nav-link:hover {
-  color: #996633;
   font-weight: bold;
 }
 
@@ -12,7 +11,7 @@
   position: sticky;
 }
 .navbar {
-  border-bottom: 3 solid #996633;
+  background: var(--white-background);
 }
 a {
   cursor: pointer;
